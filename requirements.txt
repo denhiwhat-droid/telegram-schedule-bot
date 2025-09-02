@@ -1,0 +1,8 @@
+python-telegram-bot
+pandas
+requests
+beautifulsoup4
+lxml
+openpyxl
+xlrd
+selenium
