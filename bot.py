@@ -30,7 +30,7 @@ if 'pythonanywhere' in sys.executable:
 
 # --- НАСТРОЙКИ ---
 # ВАЖНО: Убедитесь, что вы вставили свой актуальный токен
-TELEGRAM_TOKEN = "8408376268:AAHMKXSFVCZ6meJF603myAG_8SWJCHa7GK0" 
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN") 
 SCHEDULE_PAGE_URL = "https://sh40-cherepovec-r19.gosweb.gosuslugi.ru/roditelyam-i-uchenikam/izmeneniya-v-raspisanii/"
 LINK_KEYWORDS = "1 смена ШРК"
 TARGET_CLASS = "9г"
@@ -205,4 +205,5 @@ def main() -> None:
     application.run_polling()
 
 if __name__ == "__main__":
+
     main()
